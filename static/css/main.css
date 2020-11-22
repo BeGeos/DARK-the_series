@@ -1,0 +1,143 @@
+body {
+  background: rgb(24,23,38);
+  background: radial-gradient(circle, rgba(24,23,38,1) 0%, rgba(0,0,0,1) 9%, rgba(76,78,78,1) 82%);
+  color: #fff;
+  font-family: Helvetica, sans-serif;
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%
+}
+
+.page-main-title h1 {
+  text-align: center;
+}
+
+.second-home {
+    text-align: center;
+    padding-left: 20em;
+    padding-right: 20em;
+    line-height: 1.6;
+}
+
+.content-express {
+  text-align: center;
+  margin-top: auto;
+  padding-top: 5em;
+  font-family: inherit;
+}
+
+.char-list ul {
+  list-style: none;
+  text-align: center;
+  line-height: 1.6;
+  font-size: 20px;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+.char-list a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#gist {
+  padding-left: 10em;
+  padding-right: 10em;
+  line-height: 1.6;
+}
+
+#char-details {
+    padding-left: 10em;
+    padding-right: 10em;
+    line-height: 1.6;
+}
+
+#present {
+    margin-top: 5em;
+    padding-left: 10em;
+    padding-right: 10em;
+    line-height: 1.6;
+}
+
+.plot-btn {
+    background-color: black;
+    display: inline-block;
+    border-radius: 12px
+}
+
+.plot-btn a {
+    color: white;
+    text-decoration: none
+}
+
+#navigation {
+    margin-bottom: 2em;
+    height: 5em
+}
+
+#navigation a{
+    color: white;
+    text-decoration: none
+}
+
+.nav-btn {
+    background-color: black;
+    display: inline-block;
+    border-radius: 12px
+}
+
+.main-details {
+    margin-left: 200px;
+    margin-top: auto;
+}
+
+.sidenav {
+    height: 50%;
+    width: 250px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 0; /* Stay on top */
+    top: 100px;
+    left: 20px;
+    overflow-y: scroll;
+    background-color: #111; /* Black */
+    margin-top: 0px;
+    border-radius: 12px
+}
+
+.sidenav a {
+  padding: 10px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav a:active {
+    color: blue
+}
+
+.sidenav h1 h2 h3 {
+    padding-top: 6px
+}
+
+.main-game {
+    margin-top: auto;
+    padding-left: 10em;
+    padding-right: 10em;
+    line-height: 1.6;
+}
+
+.img-display {
+    padding: 6px 6px 6px 6px
+}

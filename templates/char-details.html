@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="sidenav">
+        <h3>{Characters}</h3>
+    {% for each in all %}
+        <a href="/characters/details/{{ each.fullname }}">{{ each.fullname|title }}</a>
+    {% endfor %}
+</div>
+<div class="main-details">
+    <div id="char-details">
+    <h2>{{ obj.fullname|title }}</h2>
+    <p>{{ obj.description }}</p>
+            <img src="http://localhost:8000/{{ image.image }}" alt="{{ obj.fullname }}" height="400px">
+    </div>
+    <br><br>
+    <div id="navigation">
+            {% if previous is not None %}
+            <button class="nav-btn"><a href="/characters/details/{{ previous.fullname }}">previous</a></button>
+            {% endif %}
+            {% if next is not None %}
+            <button class="nav-btn"><a href="/characters/details/{{ next.fullname }}">next</a></button>
+            {% endif %}
+    </div>
+</div>
+
+<br>
+
+{% endblock %}
+

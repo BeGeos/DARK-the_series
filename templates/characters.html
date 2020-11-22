@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Characters</h1>
+    <form action="/characters/" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Search">
+    </form>
+    <br><br>
+    <h4>List of characters</h4>
+<br>
+        <div class="char-list">
+            <ul>
+                {% for each in obj %}
+                <li>
+                    <a href="/characters/details/{{ each.fullname }}">{{ each.fullname }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+{% endblock %}

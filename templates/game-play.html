@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="main-game">
+    <h1>Play the Game</h1>
+    <p>The game is fairly simple. Just select 2 characters and the result will tell if they could exist in the real world
+    or not. Not considering time travel, this game follows the logic behind the existence of characters in the series.
+        If you haven't watched it you better do it. In the series real characters are those existing before "the split".
+    </p><br>
+</div>
+<form action="/play/game" method="get">
+        {{ form.as_p }}
+        <input type="submit" value="Match">
+    <br><br>
+    <div>
+        <h3>{{ result }}</h3>
+    </div>
+    <br><br>
+<div id="img-display">
+    <img src="http://localhost:8000/{{ first_img.image }}" alt="dark-char" width="400px">
+    <img src="http://localhost:8000/{{ second_img.image }}" alt="dark-char" width="400px">
+</div>
+<br><br>
+
+{% endblock %}
